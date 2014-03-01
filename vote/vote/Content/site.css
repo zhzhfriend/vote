@@ -1,0 +1,21 @@
+﻿body
+{
+background-color:#e3155b;
+}
+.header, .footer
+{
+width:800px;
+margin-left:auto;
+margin-right:auto;
+}
+ul.products
+{
+list-style:none;
+width:800px;
+margin-left:auto;
+margin-right:auto;
+}
+ul.products li
+{
+width:33%;
+}
