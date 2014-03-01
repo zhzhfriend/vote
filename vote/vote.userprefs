@@ -1,0 +1,17 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="vote\Default.aspx">
+    <Files>
+      <File FileName="vote\Presenter\DefaultPagePresenter.cs" Line="23" Column="13" />
+      <File FileName="vote\Model\ViewLayer\Product.cs" Line="8" Column="22" />
+      <File FileName="vote\Views\IProductListView.cs" Line="9" Column="38" />
+      <File FileName="vote\Default.aspx" Line="9" Column="11" />
+      <File FileName="vote\UserControls\CodeBehind\ProductsList.cs" Line="13" Column="33" />
+      <File FileName="vote\UserControls\Views\ProductList.ascx" Line="5" Column="30" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
