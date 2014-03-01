@@ -1,6 +1,7 @@
-<%@ Control Language="C#" ClassName="vote.ProductList" CodeBehind="~/UserControls/CodeBeind/ProductList.cs" %>
+<%@ Control Language="C#" Inherits="vote.UserControls.CodeBehind.ProductsList" CodeBehind="~/UserControls/CodeBeind/ProductList.cs" %>
 
 This is from UC
+<asp:Panel runat="server" id="pnlProductsList">
 <ul>
 <asp:Repeater id="rptProducts" runat="server">
 	<ItemTemplate>
@@ -8,3 +9,5 @@ This is from UC
 	</ItemTemplate>
 </asp:Repeater>
 	</ul>
+	</asp:Panel>
+	<asp:Label runat="server" id="lblNoProducts">No Votes Now</asp:Label>

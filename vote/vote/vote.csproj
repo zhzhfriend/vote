@@ -40,34 +40,33 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Microsoft.CSharp">
-      <RequiredTargetFramework>4.0</RequiredTargetFramework>
-    </Reference>
+    <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
-    <Reference Include="System.Core">
-      <RequiredTargetFramework>4.0</RequiredTargetFramework>
-    </Reference>
+    <Reference Include="System.Core" />
     <Reference Include="System.Data" />
-    <Reference Include="System.Data.DataSetExtensions">
-      <RequiredTargetFramework>4.0</RequiredTargetFramework>
-    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml" />
-    <Reference Include="System.Xml.Linq">
-      <RequiredTargetFramework>4.0</RequiredTargetFramework>
-    </Reference>
+    <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AssemblyInfo.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Presenter\DefaultPagePresenter.cs" />
     <Compile Include="Model\ViewLayer\Product.cs" />
     <Compile Include="Views\IProductListView.cs" />
     <Compile Include="UserControls\CodeBehind\ProductsList.cs" />
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presenters\DefaultPagePresenter.cs" />
+    <Compile Include="Biz\ProductsBiz.cs" />
+    <Compile Include="Model\Data\Product.cs" />
+    <Compile Include="DAL\ProductDAL.cs" />
+    <Compile Include="DAL\DBHelper.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Global.asax" />
@@ -109,10 +108,11 @@
     <Folder Include="DAL\" />
     <Folder Include="Biz\" />
     <Folder Include="Model\ViewLayer\" />
-    <Folder Include="Presenter\" />
     <Folder Include="Views\" />
     <Folder Include="UserControls\" />
     <Folder Include="UserControls\CodeBehind\" />
     <Folder Include="UserControls\Views\" />
+    <Folder Include="Presenters\" />
+    <Folder Include="Model\Data\" />
   </ItemGroup>
 </Project>
