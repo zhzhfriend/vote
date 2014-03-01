@@ -8,9 +8,15 @@ namespace vote.DAL
 {
 	public class ProductDAL
 	{
+		DBHelper helper = new DBHelper ();
+
+		public ProductDAL()
+		{
+		}
+
 		public IList<Product> GetAllProducts()
 		{
-			DBHelper helper = new DBHelper ();
+
 			helper.OpenConnection ();
 			OleDbDataReader reader =  helper.ExecuteQuery ("select * from products");
 
@@ -23,11 +29,30 @@ namespace vote.DAL
 			return products;
 		}
 
+		public Product GetById(int id)
+		{
+			DBHelper helper = new DBHelper ();
+			helper.OpenConnection ();
+			OleDbDataReader reader =  helper.ExecuteQuery ("select * from products where id="+id);
+
+			Product product = null;
+			while (reader.NextResult ()) {
+				product = new Product (){ 
+					Id = reader.GetInt32((int)ProductColumns.Id),
+					Title = reader.GetString ((int)ProductColumns.Title),
+					PDFSource = reader.GetString((int)ProductColumns.Pdf) };
+			}
+
+			helper.CloseConnection ();
+			return product;
+		}
+
 
 		private enum ProductColumns
 		{
 			Id,
-			Title
+			Title,
+			Pdf
 		}
 	}
 }

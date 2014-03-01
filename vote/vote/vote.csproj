@@ -73,6 +73,17 @@
     <Compile Include="Model\Data\Product.cs" />
     <Compile Include="DAL\ProductDAL.cs" />
     <Compile Include="DAL\DBHelper.cs" />
+    <Compile Include="Presenters\VotePagePresenter.cs" />
+    <Compile Include="Views\IVoteView.cs" />
+    <Compile Include="Model\ViewLayer\VoteRequest.cs" />
+    <Compile Include="Biz\VoteBiz.cs" />
+    <Compile Include="Model\Data\Vote.cs" />
+    <Compile Include="UserControls\CodeBehind\Vote.cs" />
+    <Compile Include="Model\ViewLayer\ProductView.cs" />
+    <Compile Include="Presenters\ViewProductPresenter.cs" />
+    <Compile Include="Views\IProductDetailView.cs" />
+    <Compile Include="UserControls\CodeBehind\ProductDetail.cs" />
+    <Compile Include="DAL\VoteDAL.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Global.asax" />
@@ -86,6 +97,7 @@
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
   <ProjectExtensions>
     <VisualStudio>
       <FlavorProperties GUID="{349C5851-65DF-11DA-9384-00065B846F21}">
@@ -115,6 +127,8 @@
     <Content Include="Content\site.css" />
     <Content Include="Content\footer.png" />
     <Content Include="Content\header.png" />
+    <Content Include="Vote.aspx" />
+    <Content Include="ProductDetail.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Data\" />
