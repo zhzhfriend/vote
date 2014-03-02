@@ -14,7 +14,7 @@ namespace vote.Presenters
 			IList<Product> products = new List<Product> ();
 			foreach(var t in biz.ListAll ())
 			{
-				products.Add (new Product (){ Id = t.Id, Title = t.Title,Pic=t.PicSource,VoteCount=0});
+				products.Add (new Product (){ Id = t.Id, Title = t.Title,Pic=t.PicSource.Replace("~","."),VoteCount=0});
 			}
 			view.Show (products);
 		}
