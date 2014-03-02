@@ -8,7 +8,7 @@
                     <%# Eval("Id")%>
                     <img src="<%# Eval("pic") %>" />
                     <%#Eval ("title") %>
-                    同方: <%#Eval ("Count") %>
+                    同方: <%#Eval("VoteCount")%>
                     <input type="button" value="誘同" />
 				</li>
 			</ItemTemplate>
