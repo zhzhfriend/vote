@@ -4,9 +4,12 @@
 	<ul class="products">
 		<asp:Repeater id="rptProducts" runat="server">
 			<ItemTemplate>
-				<li><%# Eval("Id")%></li>
+				<li>
+                    <%# Eval("Id")%>
+
+				</li>
 			</ItemTemplate>
 		</asp:Repeater>
 	</ul>
 </asp:Panel>
-<asp:Label runat="server" id="lblNoProducts">No Votes Now</asp:Label>
+<asp:Label runat="server" id="lblNoProducts">No Products Currently</asp:Label>

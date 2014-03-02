@@ -43,6 +43,7 @@ namespace vote
 			OleDbCommand cmd = new OleDbCommand ();
 			cmd.Connection = conn;
 			cmd.CommandText = sql;
+			cmd.CommandType = CommandType.Text;
 			OleDbDataReader reader =  cmd.ExecuteReader ();
 			return reader;
 		}

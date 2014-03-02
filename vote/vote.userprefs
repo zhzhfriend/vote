@@ -1,12 +1,6 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="vote\Content\site.css">
-    <Files>
-      <File FileName="vote\Default.aspx" Line="12" Column="19" />
-      <File FileName="vote\Content\site.css" Line="9" Column="19" />
-      <File FileName="vote\UserControls\Views\ProductList.ascx" Line="4" Column="21" />
-    </Files>
-  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
