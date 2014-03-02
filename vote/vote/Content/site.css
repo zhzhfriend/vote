@@ -16,11 +16,13 @@ ul.products {
 }
 
     ul.products li {
-        width: 33%;
+        width: 30%;
         padding:2px 2px 2px 2px;
         background-color:#c00000;
-        min-height:200px;
-        height:200px;
+        min-height:250px;
+        height:250px;
+        float:left;
+        margin: 0px 15px 15px 0px;
     }
 
         ul.products li img {

@@ -6,7 +6,10 @@
 			<ItemTemplate>
 				<li>
                     <%# Eval("Id")%>
-
+                    <img src="<%# Eval("pic") %>" />
+                    <%#Eval ("title") %>
+                    Æ±Êý: <%#Eval ("Count") %>
+                    <input type="button" value="Í¶Æ±" />
 				</li>
 			</ItemTemplate>
 		</asp:Repeater>
