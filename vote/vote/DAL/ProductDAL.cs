@@ -22,7 +22,7 @@ namespace vote.DAL
 
 			IList<Product> products = new List<Product> ();
 			while (reader.NextResult ()) {
-				products.Add (new Product (){ Id = reader.GetInt32((int)ProductColumns.Id), Title = reader.GetString ((int)ProductColumns.Title) });
+				products.Add (new Product (){ Id = reader.GetInt32((int)ProductColumns.Id), Title = reader.GetString ((int)ProductColumns.Title),PicSource=reader.GetString((int)ProductColumns.Pic) });
 			}
 
 			helper.CloseConnection ();
@@ -52,7 +52,8 @@ namespace vote.DAL
 		{
 			Id,
 			Title,
-			Pdf
+			Pdf,
+            Pic
 		}
 	}
 }
