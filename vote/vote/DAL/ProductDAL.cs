@@ -21,8 +21,13 @@ namespace vote.DAL
 			OleDbDataReader reader =  helper.ExecuteQuery ("select * from products");
 
 			IList<Product> products = new List<Product> ();
+<<<<<<< HEAD
 			while (reader.NextResult ()) {
 				products.Add (new Product (){ Id = reader.GetInt32((int)ProductColumns.Id), Title = reader.GetString ((int)ProductColumns.Title),PicSource=reader.GetString((int)ProductColumns.Pic) });
+=======
+			while (reader.Read ()) {
+				products.Add (new Product (){ Id = reader.GetInt32((int)ProductColumns.Id), Title = reader.GetString ((int)ProductColumns.Title) });
+>>>>>>> 9603db858a3a3fd48656d41357d2b854077af382
 			}
 
 			helper.CloseConnection ();

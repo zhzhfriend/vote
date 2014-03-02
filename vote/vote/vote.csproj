@@ -129,6 +129,8 @@
     <Content Include="Content\header.png" />
     <Content Include="Vote.aspx" />
     <Content Include="ProductDetail.aspx" />
+    <Content Include="Content\jquery-2.1.0.min.js" />
+    <Content Include="Content\Default.js" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Data\" />
