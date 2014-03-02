@@ -5,11 +5,11 @@
 		<asp:Repeater id="rptProducts" runat="server">
 			<ItemTemplate>
 				<li>
-                    <%# Eval("Id")%>
-                    <img src="<%# Eval("pic") %>" />
+                    
+                    <%--<img src="<%# Eval("pic") %>" />--%>
                     <%#Eval ("title") %>
-                    同方: <%#Eval ("Count") %>
-                    <input type="button" value="誘同" />
+                    <%--同方: <%#Eval ("Count") %>--%>
+                    <input type="button" value="誘同" class="btnVote" productId="<%# Eval("Id")%>"  />
 				</li>
 			</ItemTemplate>
 		</asp:Repeater>

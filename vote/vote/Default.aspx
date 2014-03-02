@@ -7,6 +7,7 @@
     <title>"纳薇 东华杯"第八届中国大学生服装立体剪裁大赛</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link rel="stylesheet" type="text/css" href="Content/site.css" />
+    <script type="text/javascript" src="Content/jquery-2.1.0.min.js"></script>
     <script type="text/javascript" src="Content/Default.js"></script>
 </head>
 <body>

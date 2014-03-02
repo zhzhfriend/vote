@@ -12,7 +12,10 @@ namespace vote.UserControls.CodeBehind
 			base.OnLoad (e);
 
 			VotePagePresenter presenter = new VotePagePresenter ();
-			presenter.Vote (null, this);
+			presenter.Vote (new VoteRequest()
+				{ ProductId = Convert.ToInt32(Request.Form["productId"]),
+					IP=Request.ServerVariables["REMOTE_ADDR"]
+				}, this);
 		}
 
 

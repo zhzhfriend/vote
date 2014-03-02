@@ -24,7 +24,7 @@ namespace vote.DAL
 		public int Add(Vote vote)
 		{
 			helper.OpenConnection ();
-			var sql = String.Format ("insert into votes (productId,Ip,voteTime) values ({0},'{1}','{2}')", vote.ProductId, vote.IP, DateTime.Now.ToString("yyyyMMDD HH:mm:ss"));
+			var sql = String.Format ("insert into votes (productId,Ip,voteDate) values ({0},'{1}','{2}')", vote.ProductId, vote.IP, DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"));
 			int result =  helper.ExecuteNonQuery (sql);
 			helper.CloseConnection ();
 			return result;

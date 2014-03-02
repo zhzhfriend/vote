@@ -11,7 +11,7 @@ namespace vote.Presenters
 		public void Vote (VoteRequest request, IVoteView view)
 		{
 			VoteBiz biz = new VoteBiz ();
-			if (biz.Vote (new Vote (){ ProductId = 1 }))
+			if (biz.Vote (new Vote (){ ProductId = request.ProductId, IP = request.IP }))
 				view.ShowVoteResult ("Success");
 			else
 				view.ShowVoteResult ("Failure");
