@@ -6,8 +6,9 @@
     width: 801px;
     margin-left: auto;
     margin-right: auto;
-    text-align:center;
+    text-align: center;
 }
+
 ul.products {
     list-style: none;
     width: 801px;
@@ -17,22 +18,44 @@ ul.products {
 
     ul.products li {
         width: 30%;
-        padding:2px 2px 2px 2px;
-        background-color:#c00000;
-        min-height:250px;
-        height:250px;
-        float:left;
+        padding: 2px 2px 2px 2px;
+        background-color: #c00000;
+        min-height: 250px;
+        height: 250px;
+        float: left;
         margin: 0px 15px 15px 0px;
     }
 
         ul.products li img {
+            display: table;
+            margin:5px auto;
         }
 
         ul.products li .title {
+            width: 100%;
+            text-align: center;
         }
 
+            ul.products li .title a:hover {
+                color:white;
+                text-decoration: underline;
+            }
+
+            ul.products li .title a:link, ul.products li .title a:active, ul.products li .title a:visited {
+                color:black;
+                text-decoration: none;
+            }
+
         ul.products li .voteCounts {
+            width: 45%;
+            float: left;
         }
 
         ul.products li .btnVote {
+            width: 45%;
+            float: right;
         }
+
+div.clearBoth {
+    clear: both;
+}

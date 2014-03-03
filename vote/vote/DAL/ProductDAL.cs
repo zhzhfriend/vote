@@ -37,7 +37,7 @@ namespace vote.DAL
 			OleDbDataReader reader =  helper.ExecuteQuery ("select * from products where id="+id);
 
 			Product product = null;
-			while (reader.NextResult ()) {
+			if (reader.Read ()) {
 				product = new Product (){ 
 					Id = reader.GetInt32((int)ProductColumns.Id),
 					Title = reader.GetString ((int)ProductColumns.Title),

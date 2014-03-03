@@ -6,14 +6,15 @@ namespace vote.Presenters
 {
 	public class ViewProductPresenter
 	{
-		public void ShowPdf(IProductDetailView view)
+		public void ShowPdf(int productId, IProductDetailView view)
 		{
 			ProductsBiz biz = new ProductsBiz();
-			var product = biz.Detail(1);
+			var product = biz.Detail(productId);
 			if(product!=null)
 				view.Show(new ProductView()
 					{
-						PdfSource="111"
+						PdfSource=product.PDFSource.Replace("~","."),
+						Title = product.Title
 					});
 			else
 				view.ShowNotFound();

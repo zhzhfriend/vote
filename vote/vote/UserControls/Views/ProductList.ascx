@@ -1,18 +1,17 @@
 <%@ Control Language="C#" Inherits="vote.UserControls.CodeBehind.ProductsList" CodeBehind="~/UserControls/CodeBeind/ProductList.cs" %>
 
-<asp:Panel runat="server" id="pnlProductsList">
-	<ul class="products">
-		<asp:Repeater id="rptProducts" runat="server">
-			<ItemTemplate>
-				<li>
-                    
-                    <%--<img src="<%# Eval("pic") %>" />--%>
-                    <%#Eval ("title") %>
-                    同方: <%#Eval("VoteCount")%>
-                    <input type="button" value="誘同" class="btnVote" productId="<%# Eval("Id")%>"  />
-				</li>
-			</ItemTemplate>
-		</asp:Repeater>
-	</ul>
+<asp:Panel runat="server" ID="pnlProductsList">
+    <ul class="products">
+        <asp:Repeater ID="rptProducts" runat="server">
+            <ItemTemplate>
+                <li>
+                    <image src="<%# Eval("pic") %>" alt="<%#Eval("title") %>" width="200" height="150" />
+                    <div class="title"><a href="productDetail.aspx?id=<%#Eval("Id")%>" target="_blank"><%#Eval ("title") %></a></div>
+                    <div class="voteCounts">同方: <%#Eval("VoteCount")%></div>
+                    <input type="button" value="誘同" class="btnVote" productid="<%# Eval("Id")%>" />
+                </li>
+            </ItemTemplate>
+        </asp:Repeater>
+    </ul>
 </asp:Panel>
-<asp:Label runat="server" id="lblNoProducts">No Products Currently</asp:Label>
+<asp:Label runat="server" ID="lblNoProducts">No Products Currently</asp:Label>
