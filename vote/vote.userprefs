@@ -1,21 +1,21 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="vote\Model\ViewLayer\ProductView.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="vote\UserControls\CodeBehind\Vote.cs">
     <Files>
-      <File FileName="vote\Presenters\ViewProductPresenter.cs" Line="17" Column="9" />
-      <File FileName="vote\Default.aspx.cs" Line="11" Column="26" />
-      <File FileName="vote\ProductDetail.aspx" Line="1" Column="1" />
-      <File FileName="vote\UserControls\CodeBehind\ProductDetail.cs" Line="21" Column="26" />
-      <File FileName="vote\Biz\ProductsBiz.cs" Line="20" Column="19" />
-      <File FileName="d:\Work\NET\Projects\InProgress\vote\vote\vote\DAL\ProductDAL.cs" Line="42" Column="9" />
-      <File FileName="vote\Model\ViewLayer\ProductView.cs" Line="8" Column="16" />
+      <File FileName="vote\Presenters\DefaultPagePresenter.cs" Line="19" Column="3" />
+      <File FileName="vote\Default.aspx.cs" Line="18" Column="43" />
+      <File FileName="vote\Views\IRandomView.cs" Line="7" Column="20" />
+      <File FileName="d:\Work\NET\Projects\InProgress\vote\vote\vote\Biz\UserBiz.cs" Line="17" Column="5" />
+      <File FileName="vote\Presenters\VotePagePresenter.cs" Line="11" Column="32" />
+      <File FileName="vote\UserControls\CodeBehind\Vote.cs" Line="19" Column="14" />
+      <File FileName="d:\Work\NET\Projects\InProgress\vote\vote\vote\Global.asax.cs" Line="62" Column="4" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="D:\Work\NET\Projects\InProgress\vote\vote\vote\DAL\VoteDAL.cs" line="27" column="1" />
       <Breakpoint file="D:\Work\NET\Projects\InProgress\vote\vote\vote\UserControls\CodeBehind\Vote.cs" line="15" column="1" />
-      <Breakpoint file="D:\Work\NET\Projects\InProgress\vote\vote\vote\Presenters\VotePagePresenter.cs" line="13" column="33" />
+      <Breakpoint file="D:\Work\NET\Projects\InProgress\vote\vote\vote\Presenters\VotePagePresenter.cs" line="17" column="33" />
       <Breakpoint file="d:\Work\NET\Projects\InProgress\vote\vote\vote\DAL\DBHelper.cs" line="34" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

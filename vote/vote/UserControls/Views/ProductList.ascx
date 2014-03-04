@@ -8,7 +8,7 @@
                     <image src="<%# Eval("pic") %>" alt="<%#Eval("title") %>" width="180" height="190" />
                     <div class="title"><a href="productDetail.aspx?id=<%#Eval("Id")%>" target="_blank"><%#Eval ("title") %></a></div>
                     <div class="voteCounts">Ʊ��: <%#Eval("VoteCount")%></div>
-                    <input type="button" value="ͶƱ" class="btnVote" productid="<%# Eval("Id")%>" />
+                    <input type="image" src="content/vote.png" value="ͶƱ" class="btnVote" productid="<%# Eval("Id")%>" />
                 </li>
             </ItemTemplate>
         </asp:Repeater>

@@ -6,6 +6,7 @@
             modal: true
         });
         $("#dialog-modal").data('productId', $(this).attr('productId'));
+        return false;
     });
 
     $('#btnSubmit').click(function () {
