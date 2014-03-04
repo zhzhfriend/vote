@@ -84,6 +84,9 @@
     <Compile Include="Views\IProductDetailView.cs" />
     <Compile Include="UserControls\CodeBehind\ProductDetail.cs" />
     <Compile Include="DAL\VoteDAL.cs" />
+    <Compile Include="Model\Data\User.cs" />
+    <Compile Include="Biz\UserBiz.cs" />
+    <Compile Include="Views\IRandomView.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Global.asax" />

@@ -12,15 +12,23 @@ using System.Diagnostics;
 
 namespace vote
 {
-	public class Default:Page
+	public class Default:Page, IRandomView
 	{
 		protected ProductsList UCProductsList;
+		protected String RandomCode=string.Empty;
 
 		protected override void OnLoad (EventArgs e)
 		{
 			base.OnLoad (e);
 			DefaultPagePresenter p = new DefaultPagePresenter ();
 			p.ShowAllProducts (UCProductsList as IProductListView);
+
+			p.ShowRandomCode (this as IRandomView);
+		}
+
+		public void Show (String code)
+		{
+			this.RandomCode=code;
 		}
 	}
 }

@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using vote.Model.ViewLayer;
 using vote.Views;
 using vote.DAL;
+using vote.Biz;
 
 namespace vote.Presenters
 {
@@ -21,6 +22,14 @@ namespace vote.Presenters
 			}
 			view.Show (products);
 		}
+
+		public void ShowRandomCode(IRandomView view)
+		{
+			UserBiz userBiz = new UserBiz ();
+			userBiz.GetCurrentUser ().RandomCode = (new Random (DateTime.Now.Millisecond)).Next (0, 10000).ToString();
+			view.Show (userBiz.GetCurrentUser ().RandomCode);
+		}
 	}
+
 }
 

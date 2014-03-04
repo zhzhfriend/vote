@@ -6,6 +6,7 @@ namespace vote
 	{
 		public int ProductId{get;set;}
 		public String IP{get;set;}
+		public String RandomCode{get;set;}
 	}
 }
 

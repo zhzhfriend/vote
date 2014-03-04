@@ -69,3 +69,7 @@ ul.products {
 div.clearBoth {
     clear: both;
 }
+
+input#txtRandomCode {
+    width:150px;
+}

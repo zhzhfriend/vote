@@ -14,7 +14,8 @@ namespace vote.UserControls.CodeBehind
 			VotePagePresenter presenter = new VotePagePresenter ();
 			presenter.Vote (new VoteRequest()
 				{ ProductId = Convert.ToInt32(Request.Form["productId"]),
-					IP=Request.ServerVariables["REMOTE_ADDR"]
+					IP=Request.ServerVariables["REMOTE_ADDR"], 
+					RandomCode=Request.Form["randomCode"]
 				}, this);
 		}
 
