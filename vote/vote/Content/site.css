@@ -9,6 +9,10 @@
     text-align: center;
 }
 
+.header {
+    margin-bottom:-20px;
+}
+
 ul.products {
     list-style: none;
     width: 801px;
