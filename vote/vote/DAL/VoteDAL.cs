@@ -14,7 +14,7 @@ namespace vote.DAL
 			helper.OpenConnection ();
 			OleDbDataReader reader =  helper.ExecuteQuery ("select count(*) from votes where ip='"+ip+"'");
 			int count = 0;
-			if (reader.NextResult ()) {
+			if (reader.Read ()) {
 				count= reader.GetInt32 (0);
 			}
 			helper.CloseConnection ();
@@ -29,6 +29,22 @@ namespace vote.DAL
 			helper.CloseConnection ();
 			return result;
 		}
+
+        public int Count(int ProductId)
+        {
+            helper.OpenConnection();
+            //var sql = String.Format("select count(*) from votes where productId={0}", ProductId);
+            //int result = helper.ExecuteNonQuery(sql);
+            //string varString = Convert.ToString(ProductId);
+            OleDbDataReader reader = helper.ExecuteQuery("select count(*) from votes where ProductId='" + ProductId + "'");
+            int count = 0;
+            if (reader.Read())
+            {
+                count = reader.GetInt32(0);
+            }
+            helper.CloseConnection();
+            return count;
+        }
 	}
 }
 
