@@ -12,9 +12,9 @@ namespace vote.Presenters
 		{
 			VoteBiz biz = new VoteBiz ();
 			if (biz.Vote (new Vote (){ ProductId = request.ProductId, IP = request.IP }))
-				view.ShowVoteResult ("Success");
+				view.ShowVoteResult ("投票成功");
 			else
-				view.ShowVoteResult ("Failure");
+				view.ShowVoteResult ("投票失败，您所在的IP地址已经投过10张票啦~");
 		}
 	}
 }

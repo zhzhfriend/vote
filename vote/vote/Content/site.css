@@ -20,40 +20,50 @@ ul.products {
         width: 30%;
         padding: 2px 2px 2px 2px;
         background-color: #c00000;
-        min-height: 250px;
-        height: 250px;
+        min-height: 280px;
+        height: 280px;
         float: left;
         margin: 0px 15px 15px 0px;
     }
 
         ul.products li img {
             display: table;
-            margin:5px auto;
+            margin:5px auto 5px auto;
+            width:200px;
         }
 
         ul.products li .title {
             width: 100%;
             text-align: center;
+            margin:12px auto 12px auto;
+            font-weight:bold;
+            color:yellow;
         }
-
-            ul.products li .title a:hover {
-                color:white;
-                text-decoration: underline;
-            }
 
             ul.products li .title a:link, ul.products li .title a:active, ul.products li .title a:visited {
                 color:black;
                 text-decoration: none;
+                color:yellow;
+            }
+
+            ul.products li .title a:hover {
+                color:yellow;
+                text-decoration: underline;
             }
 
         ul.products li .voteCounts {
-            width: 45%;
+            width: 75px;
             float: left;
+            color:white;
+            font-weight:bold;
+            margin-left:30px;
         }
 
         ul.products li .btnVote {
-            width: 45%;
+            width: 75px;
             float: right;
+            background-color:yellow;
+            margin-right:25px;
         }
 
 div.clearBoth {
