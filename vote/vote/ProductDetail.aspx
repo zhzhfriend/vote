@@ -8,12 +8,14 @@
 	
     </script>
 </head>
-<body>
+<body >
+<div align="center">
     <form id="form1" runat="server">
         <object width="801" height="801" type="application/x-shockwave-flash" data="<%=pdfSource%>">
             <param name="src" value="<%=pdfSource%>" />
             <param name="quality" value="high" />
         </object>
     </form>
+</div>
 </body>
 </html>

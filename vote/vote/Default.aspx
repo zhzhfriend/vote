@@ -14,7 +14,7 @@
 </head>
 <body>
     <div class="header">
-        <img src="content/header.png" alt="纳薇 东华杯第八届中国大学生服装立体剪裁大赛" />
+        <img src="content/header1.png" alt="纳薇 东华杯第八届中国大学生服装立体剪裁大赛" />
     </div>
     <div class="main">
         <form id="form1" runat="server">
